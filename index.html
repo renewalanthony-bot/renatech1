@@ -483,4 +483,784 @@ th{background:#24183b}
       </article>
 
       <article class="portfolio-item" data-category="video">
-     
+        <video controls preload="metadata" playsinline>
+          <source src="https://res.cloudinary.com/r6ylkhbq/video/upload/v1791440211/RenaTech_video_editing_services___20261008071531.mp4" type="video/mp4">
+          Your browser does not support this video. Please open the video in a modern browser.
+        </video>
+        <div class="portfolio-caption">
+          <span class="tag">Video Editing</span>
+          <h3>RenaTech Video Demonstration</h3>
+          <p>Play the video to explore the supplied demonstration.</p>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:30px">
+      <a href="#booking" class="btn primary">Create Something for Me →</a>
+    </div>
+  </div>
+</section>
+
+<section id="waitlist" style="background:#0d0d18">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">STAY CONNECTED</span>
+      <h2>Join the RenaTech <span class="gradient-text">Waitlist</span></h2>
+      <p class="muted">Register your interest in our creative services. We can contact you about your selected service and project requirements.</p>
+
+      <div class="notice">
+        Your information should be handled privately. This standalone demonstration saves records only in this browser. Connect a secure backend before collecting real customer information.
+      </div>
+    </div>
+
+    <div class="panel">
+      <form id="waitlistForm">
+        <div class="field">
+          <label for="wName">Full Name *</label>
+          <input id="wName" name="name" required maxlength="100" placeholder="Enter your full name">
+        </div>
+        <div class="field">
+          <label for="wPhone">Phone Number *</label>
+          <input id="wPhone" name="phone" type="tel" required maxlength="20" placeholder="e.g. 07012345678">
+        </div>
+        <div class="field">
+          <label for="wEmail">Email Address (optional)</label>
+          <input id="wEmail" name="email" type="email" maxlength="150" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="wService">Service of Interest *</label>
+          <select id="wService" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Photo Editing</option>
+            <option>Video Editing</option>
+            <option>Talking Flyers</option>
+            <option>Graphic Design</option>
+            <option>Video Adverts</option>
+            <option>Business & Social Media Designs</option>
+            <option>AI Automation</option>
+            <option>Custom Creative Projects</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="wInfo">Additional Information</label>
+          <textarea id="wInfo" name="info" maxlength="1500" placeholder="Tell us about your project (optional)"></textarea>
+        </div>
+        <label style="display:flex;gap:10px;align-items:flex-start;margin-bottom:18px">
+          <input type="checkbox" required style="width:auto;margin-top:5px">
+          <span class="small">I agree that RenaTech may contact me about this enquiry.</span>
+        </label>
+        <button class="btn primary" type="submit" style="width:100%">Join the Waitlist Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">START YOUR PROJECT</span>
+      <h2>Book Your Creative <span class="gradient-text">Service</span></h2>
+      <p class="muted">Tell us what you need, select your preferred delivery date, and submit your request. We will need to review the project before confirming availability and price.</p>
+
+      <div class="contact-card">
+        <div class="contact-icon">📝</div>
+        <div><h3>1. Submit Your Request</h3><p class="muted">Describe your project and choose a service.</p></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🤝</div>
+        <div><h3>2. Confirm the Details</h3><p class="muted">Discuss the project scope, delivery date and price.</p></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">✨</div>
+        <div><h3>3. Begin Your Project</h3><p class="muted">Follow the agreed payment and project process.</p></div>
+      </div>
+
+      <a href="https://wa.me/2347035762348?text=Hello%20RenaTech%2C%20I%20would%20like%20to%20discuss%20a%20creative%20project."
+         target="_blank" rel="noopener" class="btn whatsapp">Discuss on WhatsApp</a>
+    </div>
+
+    <div class="panel">
+      <form id="bookingForm">
+        <div class="field">
+          <label for="bName">Full Name *</label>
+          <input id="bName" name="name" required maxlength="100" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label for="bPhone">Phone Number *</label>
+          <input id="bPhone" name="phone" type="tel" required maxlength="20" placeholder="Your phone number">
+        </div>
+        <div class="field">
+          <label for="bEmail">Email Address (optional)</label>
+          <input id="bEmail" name="email" type="email" maxlength="150" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="bService">Select a Service *</label>
+          <select id="bService" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Photo Editing</option>
+            <option>Video Editing</option>
+            <option>Talking Flyers</option>
+            <option>Graphic Design</option>
+            <option>Video Adverts</option>
+            <option>Business & Social Media Designs</option>
+            <option>AI Automation</option>
+            <option>Custom Creative Projects</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bDescription">Describe Your Project *</label>
+          <textarea id="bDescription" name="description" required maxlength="3000" placeholder="Explain what you want us to create"></textarea>
+        </div>
+        <div class="field">
+          <label for="bDate">Preferred Delivery Date *</label>
+          <input id="bDate" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="bFile">Reference Image or File (optional)</label>
+          <input id="bFile" name="file" type="file" accept="image/*,.pdf,.mp4,.mov">
+          <p class="form-note">Demo only: this form does not upload your file to a server. Do not select private files in this demo.</p>
+        </div>
+        <button class="btn primary" type="submit" style="width:100%">Submit Booking Request</button>
+        <p class="form-note">Your preferred date is a request, not a confirmed delivery date.</p>
+      </form>
+
+      <div id="bookingResult" class="notice hidden"></div>
+    </div>
+  </div>
+</section>
+
+<section id="payment" style="background:#0d0d18">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">PAYMENT INSTRUCTIONS</span>
+      <h2>Pay for Your <span class="gradient-text">RenaTech Service</span></h2>
+      <p class="muted">After RenaTech agrees to your project price, use the supplied account details to make your bank transfer.</p>
+
+      <div class="account">
+        <p class="muted small">BANK</p>
+        <h3>Moniepoint</h3>
+        <p class="muted small">ACCOUNT NAME</p>
+        <h3>Renewal Anthony</h3>
+        <p class="muted small">ACCOUNT NUMBER</p>
+        <div class="account-number" id="accountNumber">7035762348</div>
+        <button class="btn primary" type="button" id="copyAccount">▣ Copy Account Number</button>
+      </div>
+
+      <ol class="steps">
+        <li>Submit your booking request.</li>
+        <li>Wait for confirmation of your service and agreed price.</li>
+        <li>Transfer the agreed amount.</li>
+        <li>Submit your transaction reference using the form.</li>
+        <li>Wait for an authorized administrator to verify the transfer.</li>
+      </ol>
+
+      <div class="notice">
+        Important: A submitted transaction reference is not proof of payment. Payment must be checked against funds actually received. Never share your bank PIN, password or OTP.
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Submit Payment for Verification</h3>
+      <p class="muted small" style="margin-bottom:20px">Use the reference provided after submitting your booking request.</p>
+      <form id="paymentForm">
+        <div class="field">
+          <label for="pName">Customer Name *</label>
+          <input id="pName" name="name" required maxlength="100">
+        </div>
+        <div class="field">
+          <label for="pBooking">Booking Reference *</label>
+          <input id="pBooking" name="booking" required maxlength="80" placeholder="Enter your booking reference">
+        </div>
+        <div class="field">
+          <label for="pAmount">Amount Paid (₦) *</label>
+          <input id="pAmount" name="amount" type="number" min="1" step="1" required>
+        </div>
+        <div class="field">
+          <label for="pReference">Transaction Reference *</label>
+          <input id="pReference" name="reference" required maxlength="150">
+        </div>
+        <div class="field">
+          <label for="pDate">Payment Date (optional)</label>
+          <input id="pDate" name="date" type="date">
+        </div>
+        <button class="btn primary" type="submit" style="width:100%">Submit Payment for Verification</button>
+      </form>
+      <div id="paymentResult" class="notice hidden"></div>
+    </div>
+  </div>
+</section>
+
+<section id="status">
+  <div class="container" style="max-width:750px">
+    <div class="section-head">
+      <span class="eyebrow">BOOKING INFORMATION</span>
+      <h2>Check Your <span class="gradient-text">Booking Status</span></h2>
+      <p>Enter your booking reference to check a booking saved in this browser demo.</p>
+    </div>
+    <div class="panel">
+      <form id="statusForm">
+        <div class="field">
+          <label for="statusReference">Booking Reference</label>
+          <input id="statusReference" required placeholder="e.g. RENA-ABC123">
+        </div>
+        <button class="btn primary" type="submit">Check Status</button>
+      </form>
+      <div id="statusResult" class="notice hidden"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#0d0d18">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">LET'S TALK</span>
+      <h2>Let's Bring Your Creative Ideas to <span class="gradient-text">Life!</span></h2>
+      <p class="muted">Have a project in mind or need help choosing the right service? Contact RenaTech today.</p>
+
+      <div class="contact-card">
+        <div class="contact-icon">💬</div>
+        <div>
+          <h3>WhatsApp</h3>
+          <p class="muted">07035762348</p>
+          <a class="gradient-text" href="https://wa.me/2347035762348" target="_blank" rel="noopener">Chat with us →</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🎨</div>
+        <div>
+          <h3>Our Services</h3>
+          <p class="muted">Photo editing, video editing, talking flyers, graphic design, video adverts and AI automation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Send an Enquiry</h3>
+      <form id="contactForm">
+        <div class="field">
+          <label for="cName">Full Name *</label>
+          <input id="cName" name="name" required maxlength="100">
+        </div>
+        <div class="field">
+          <label for="cPhone">Phone Number *</label>
+          <input id="cPhone" name="phone" type="tel" required maxlength="20">
+        </div>
+        <div class="field">
+          <label for="cEmail">Email Address (optional)</label>
+          <input id="cEmail" name="email" type="email" maxlength="150">
+        </div>
+        <div class="field">
+          <label for="cSubject">Subject *</label>
+          <input id="cSubject" name="subject" required maxlength="150">
+        </div>
+        <div class="field">
+          <label for="cMessage">Your Message *</label>
+          <textarea id="cMessage" name="message" required maxlength="3000"></textarea>
+        </div>
+        <button class="btn primary" type="submit" style="width:100%">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container" style="max-width:800px">
+    <div class="section-head">
+      <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+    </div>
+    <details class="faq-item">
+      <summary>How much do RenaTech services cost?</summary>
+      <p>Services start from ₦3,000. The final amount depends on the service and project requirements.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How do I book a service?</summary>
+      <p>Complete the booking form with your details and project description. RenaTech must review and confirm the request.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How do I pay?</summary>
+      <p>After agreeing on your project price, follow the bank transfer instructions and submit your transaction reference for verification.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I contact RenaTech directly?</summary>
+      <p>Yes. Use the WhatsApp buttons on this website to open a conversation with RenaTech.</p>
+    </details>
+  </div>
+</section>
+
+<!-- LOCAL DEMONSTRATION DASHBOARD -->
+<section id="adminDemo" class="admin-area">
+  <div class="container">
+    <span class="eyebrow">LOCAL PREVIEW ONLY</span>
+    <h2>RenaTech <span class="gradient-text">Demo Dashboard</span></h2>
+    <div class="notice">
+      This dashboard displays demo records saved in this browser only. It is NOT a secure admin panel. It has no real authentication, shared database or payment verification authority.
+    </div>
+    <div class="cards">
+      <div class="card"><p>Bookings</p><h2 id="countBookings">0</h2></div>
+      <div class="card"><p>Waitlist Registrations</p><h2 id="countWaitlist">0</h2></div>
+      <div class="card"><p>Payment Submissions</p><h2 id="countPayments">0</h2></div>
+      <div class="card"><p>Contact Messages</p><h2 id="countMessages">0</h2></div>
+    </div>
+
+    <div class="admin-actions">
+      <button class="btn secondary" onclick="showAdminTable('bookings')">View Bookings</button>
+      <button class="btn secondary" onclick="showAdminTable('waitlist')">View Waitlist</button>
+      <button class="btn secondary" onclick="showAdminTable('payments')">View Payments</button>
+      <button class="btn secondary" onclick="showAdminTable('messages')">View Messages</button>
+      <button class="btn secondary" onclick="exportDemoData()">Export Demo Data</button>
+      <button class="btn secondary" onclick="clearDemoData()">Clear Demo Data</button>
+    </div>
+    <div id="adminTable" class="admin-table-wrap"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div style="max-width:370px">
+        <a href="#home" class="brand">
+          <img src="https://res.cloudinary.com/r6ylkhbq/image/upload/v1791440284/file_000000008aa081f4b770a406ee6d7eff.png" alt="RenaTech logo">
+          <span>Rena<span class="gradient-text">Tech</span></span>
+        </a>
+        <p class="muted" style="margin-top:12px">Creative Solutions. Professional Results. Affordable Prices.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#booking">Book a Service</a>
+        <a href="#waitlist">Waitlist</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> RenaTech. All Rights Reserved.
+      <br>Creative Solutions. Professional Results. Affordable Prices.
+      <p style="margin-top:8px">
+        <a href="#adminDemo" id="demoDashboardLink">Local Demo Dashboard</a>
+        <span> · </span>
+        <a href="#privacy" id="privacyLink">Privacy Notice</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<a class="btn whatsapp float-wa"
+   href="https://wa.me/2347035762348?text=Hello%20RenaTech%2C%20I%20would%20like%20to%20enquire%20about%20your%20creative%20services."
+   target="_blank" rel="noopener" aria-label="Chat with RenaTech on WhatsApp">☘ WhatsApp</a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+
+/*
+ RenaTech TrebEdit starter website.
+
+ IMPORTANT:
+ This standalone version stores demo records in this browser's
+ localStorage. It is not a secure shared database and must not be
+ used to collect real customer or payment information in production.
+
+ Connect Supabase or another secure backend before launching.
+*/
+
+const STORE = {
+  bookings: "renatech_demo_bookings",
+  waitlist: "renatech_demo_waitlist",
+  payments: "renatech_demo_payments",
+  messages: "renatech_demo_messages"
+};
+
+function readRecords(key) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || "[]");
+    return Array.isArray(value) ? value : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function saveRecords(key, records) {
+  try {
+    localStorage.setItem(key, JSON.stringify(records));
+    return true;
+  } catch (error) {
+    showToast("Unable to save. Browser storage may be unavailable.");
+    return false;
+  }
+}
+
+function newReference(prefix) {
+  const random = Math.random().toString(36).slice(2, 8).toUpperCase();
+  return prefix + "-" + random;
+}
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => toast.classList.remove("show"), 3500);
+}
+
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+function formObject(form) {
+  return Object.fromEntries(new FormData(form).entries());
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const menuBtn = document.getElementById("menuBtn");
+const navlinks = document.getElementById("navlinks");
+
+menuBtn.addEventListener("click", () => {
+  navlinks.classList.toggle("show");
+});
+
+navlinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => navlinks.classList.remove("show"));
+});
+
+function bookService(service) {
+  document.getElementById("bService").value = service;
+  document.getElementById("booking").scrollIntoView({behavior:"smooth"});
+}
+
+document.querySelectorAll(".filter-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    button.classList.add("active");
+
+    const category = button.dataset.filter;
+
+    document.querySelectorAll(".portfolio-item").forEach(item => {
+      item.classList.toggle(
+        "hidden",
+        category !== "all" && item.dataset.category !== category
+      );
+    });
+  });
+});
+
+document.getElementById("copyAccount").addEventListener("click", async () => {
+  const number = document.getElementById("accountNumber").textContent.trim();
+
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(number);
+    } else {
+      const temp = document.createElement("textarea");
+      temp.value = number;
+      temp.style.position = "fixed";
+      temp.style.opacity = "0";
+      document.body.appendChild(temp);
+      temp.select();
+      const copied = document.execCommand("copy");
+      temp.remove();
+      if (!copied) throw new Error("Copy failed");
+    }
+    showToast("Account number copied.");
+  } catch (error) {
+    showToast("Please copy the account number manually: " + number);
+  }
+});
+
+const dateInput = document.getElementById("bDate");
+const today = new Date();
+dateInput.min = [
+  today.getFullYear(),
+  String(today.getMonth()+1).padStart(2,"0"),
+  String(today.getDate()).padStart(2,"0")
+].join("-");
+
+document.getElementById("bookingForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+
+  const data = formObject(form);
+
+  if (data.date < dateInput.min) {
+    showToast("Please choose today or a future date.");
+    return;
+  }
+
+  // The optional file is deliberately not uploaded or persisted here.
+  const booking = {
+    reference: newReference("RENA"),
+    name: data.name.trim(),
+    phone: data.phone.trim(),
+    email: data.email.trim(),
+    service: data.service,
+    description: data.description.trim(),
+    preferredDate: data.date,
+    status: "Pending",
+    paymentStatus: "Not Submitted",
+    createdAt: new Date().toISOString()
+  };
+
+  const records = readRecords(STORE.bookings);
+  records.unshift(booking);
+
+  if (!saveRecords(STORE.bookings, records)) return;
+
+  const result = document.getElementById("bookingResult");
+  result.classList.remove("hidden");
+  result.innerHTML =
+    "<strong>Demo booking saved in this browser.</strong><br>" +
+    "Booking reference: <strong>" + escapeHTML(booking.reference) + "</strong><br>" +
+    "Service: " + escapeHTML(booking.service) + "<br>" +
+    "Status: Pending review.<br>" +
+    "<span class='small'>This record is not sent to RenaTech and will not appear on another device.</span>";
+
+  document.getElementById("statusReference").value = booking.reference;
+  form.reset();
+  updateAdminDashboard();
+  showToast("Demo booking saved locally.");
+});
+
+document.getElementById("waitlistForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+
+  const data = formObject(form);
+  const record = {
+    reference: newReference("WAIT"),
+    name: data.name.trim(),
+    phone: data.phone.trim(),
+    email: data.email.trim(),
+    service: data.service,
+    info: data.info.trim(),
+    status: "New",
+    createdAt: new Date().toISOString()
+  };
+
+  const records = readRecords(STORE.waitlist);
+  records.unshift(record);
+
+  if (!saveRecords(STORE.waitlist, records)) return;
+
+  form.reset();
+  updateAdminDashboard();
+  showToast("Demo waitlist registration saved in this browser.");
+});
+
+document.getElementById("paymentForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+
+  const data = formObject(form);
+  const bookings = readRecords(STORE.bookings);
+  const booking = bookings.find(item =>
+    item.reference.toLowerCase() === data.booking.trim().toLowerCase()
+  );
+
+  if (!booking) {
+    showToast("Booking not found in this browser demo. Check the reference.");
+    return;
+  }
+
+  if (booking.name.trim().toLowerCase() !== data.name.trim().toLowerCase()) {
+    showToast("The customer name does not match the demo booking.");
+    return;
+  }
+
+  const payments = readRecords(STORE.payments);
+  const duplicate = payments.some(item =>
+    item.reference.trim().toLowerCase() === data.reference.trim().toLowerCase()
+  );
+
+  if (duplicate) {
+    showToast("This transaction reference was already submitted in this demo.");
+    return;
+  }
+
+  const payment = {
+    id: newReference("PAY"),
+    bookingReference: booking.reference,
+    name: data.name.trim(),
+    amount: Number(data.amount),
+    reference: data.reference.trim(),
+    date: data.date || "",
+    status: "Payment Unverified",
+    submittedAt: new Date().toISOString()
+  };
+
+  payments.unshift(payment);
+
+  if (!saveRecords(STORE.payments, payments)) return;
+
+  booking.paymentStatus = "Payment Unverified";
+  saveRecords(STORE.bookings, bookings);
+
+  const result = document.getElementById("paymentResult");
+  result.classList.remove("hidden");
+  result.textContent =
+    "Demo payment submission saved locally. Status: Payment Unverified. " +
+    "No bank account has been checked and no payment has been verified.";
+
+  form.reset();
+  updateAdminDashboard();
+  showToast("Demo payment reference saved locally.");
+});
+
+document.getElementById("statusForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const reference = document.getElementById("statusReference").value.trim();
+  const result = document.getElementById("statusResult");
+  const booking = readRecords(STORE.bookings).find(item =>
+    item.reference.toLowerCase() === reference.toLowerCase()
+  );
+
+  result.classList.remove("hidden");
+
+  if (!booking) {
+    result.textContent = "No matching booking was found in this browser demo.";
+    return;
+  }
+
+  result.innerHTML =
+    "<strong>Demo booking found</strong><br>" +
+    "Reference: " + escapeHTML(booking.reference) + "<br>" +
+    "Service: " + escapeHTML(booking.service) + "<br>" +
+    "Preferred date: " + escapeHTML(booking.preferredDate) + "<br>" +
+    "Booking status: <span class='status'>" + escapeHTML(booking.status) + "</span><br>" +
+    "Payment status: " + escapeHTML(booking.paymentStatus || "Not Submitted") + "<br>" +
+    "<span class='small'>This is a local preview, not a secure customer status lookup.</span>";
+});
+
+document.getElementById("contactForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+
+  const data = formObject(form);
+  const record = {
+    id: newReference("MSG"),
+    name: data.name.trim(),
+    phone: data.phone.trim(),
+    email: data.email.trim(),
+    subject: data.subject.trim(),
+    message: data.message.trim(),
+    createdAt: new Date().toISOString()
+  };
+
+  const records = readRecords(STORE.messages);
+  records.unshift(record);
+
+  if (!saveRecords(STORE.messages, records)) return;
+
+  form.reset();
+  updateAdminDashboard();
+  showToast("Demo enquiry saved in this browser only.");
+});
+
+function updateAdminDashboard() {
+  document.getElementById("countBookings").textContent =
+    readRecords(STORE.bookings).length;
+  document.getElementById("countWaitlist").textContent =
+    readRecords(STORE.waitlist).length;
+  document.getElementById("countPayments").textContent =
+    readRecords(STORE.payments).length;
+  document.getElementById("countMessages").textContent =
+    readRecords(STORE.messages).length;
+}
+
+function showAdminTable(type) {
+  const records = readRecords(STORE[type]);
+  const target = document.getElementById("adminTable");
+
+  if (!records.length) {
+    target.textContent = "No demo records saved in this browser yet.";
+    return;
+  }
+
+  const columns = {
+    bookings: ["reference","name","phone","service","preferredDate","status"],
+    waitlist: ["reference","name","phone","service","status"],
+    payments: ["id","bookingReference","name","amount","reference","status"],
+    messages: ["id","name","phone","subject","message"]
+  }[type];
+
+  let html = "<table><thead><tr>" +
+    columns.map(col => "<th>" + escapeHTML(col) + "</th>").join("") +
+    "</tr></thead><tbody>";
+
+  records.forEach(record => {
+    html += "<tr>" + columns.map(col =>
+      "<td>" + escapeHTML(record[col] ?? "") + "</td>"
+    ).join("") + "</tr>";
+  });
+
+  html += "</tbody></table>";
+  target.innerHTML = html;
+}
+
+function exportDemoData() {
+  const data = {};
+  Object.entries(STORE).forEach(([name, key]) => {
+    data[name] = readRecords(key);
+  });
+
+  const blob = new Blob([JSON.stringify(data, null, 2)], {
+    type: "application/json"
+  });
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "renatech-demo-data.json";
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast("Demo data export requested.");
+}
+
+function clearDemoData() {
+  if (!confirm("Delete all RenaTech demo records saved in this browser?")) return;
+
+  Object.values(STORE).forEach(key => localStorage.removeItem(key));
+  document.getElementById("adminTable").textContent = "Demo records cleared.";
+  updateAdminDashboard();
+  showToast("Local demo records cleared.");
+}
+
+document.getElementById("demoDashboardLink").addEventListener("click", event => {
+  event.preventDefault();
+  const section = document.getElementById("adminDemo");
+  section.classList.add("open");
+  section.scrollIntoView({behavior:"smooth"});
+  updateAdminDashboard();
+});
+
+document.getElementById("privacyLink").addEventListener("click", event => {
+  event.preventDefault();
+  alert(
+    "Privacy notice: This standalone demo saves form records in this browser only. " +
+    "Do not use it to collect real customer data. Before launch, connect a secure " +
+    "backend, publish a reviewed privacy policy, and configure access controls."
+  );
+});
+
+updateAdminDashboard();
+</script>
+</body>
+</html>
